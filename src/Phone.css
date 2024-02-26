@@ -1,0 +1,95 @@
+/* Styles for the wrapper */
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+/* Styles for input boxes within the wrapper */
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+/* Styles for input elements */
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+/* Styles for input placeholders */
+.input-box input::placeholder {
+    color: #fff;
+}
+
+/* Styles for icons within input boxes */
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+/* Styles for date input type */
+.input-box input[type="date"] {
+    padding-right: 30px;
+    /* Ensure space for the button */
+}
+
+/* Styles for date picker indicator in webkit browsers */
+.input-box input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    filter: brightness(0) invert(1);
+    /* Invert color */
+}
+
+/* Styles for select elements */
+.input-box select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+/* Hide the default arrow in select elements */
+.input-box select::-ms-expand {
+    display: none;
+}
+
+/* Styles for options within select elements */
+.input-box select option {
+    background-color: #333;
+    /* Change the background color of options */
+    color: #fff;
+    /* Change the text color of options */
+}
+
+/* Styles for selected option within select elements */
+.input-box select option:checked {
+    background-color: #555;
+    /* Change the background color of selected option */
+}

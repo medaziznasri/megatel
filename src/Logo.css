@@ -1,0 +1,14 @@
+/* Logo.css */
+
+.logo-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 10px;
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+}
